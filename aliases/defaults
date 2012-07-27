@@ -1,0 +1,18 @@
+alias grep="grep --color"
+alias egrep="egrep --color"
+alias less="less -Xr"
+
+alias tailf="tail -f"
+alias l="ls"
+alias la="ls -a"
+alias ll="ls -lah"
+alias ls="ls -G"
+
+# secure your moviments and commands
+alias mv="mv -i"
+alias cp="cp -i"
+alias rm="rm -i"
+
+# vim
+alias v='mvim'
+

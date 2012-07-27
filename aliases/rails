@@ -1,0 +1,13 @@
+alias rc="bundle exec rails console"
+alias r="rails"
+alias rs="bundle exec rails s"
+
+alias gib="gem install bundler"
+alias gibp="gem install bundler --pre"
+alias bi="bundle install"
+alias bu="bundle update"
+alias bx="bundle exec"
+alias bs="bundle exec rspec"
+alias bir="bundle install --relock"
+alias brake="bundle exec rake"
+alias brails="bundle exec rails"

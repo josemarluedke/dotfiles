@@ -1,0 +1,14 @@
+[core]
+	excludesfile = ~/.gitignore
+[color]
+	diff = auto
+	ui = true
+[alias]
+   s = status
+   ci = commit -m
+   p = push
+   l = pull
+[push]
+	default = current
+[pull]
+	default = current
