@@ -38,7 +38,5 @@ done
 
 # alieases hooks
 for i in $HOME/.dotfiles/aliases/* ; do
-    if [ -x "$i" ]; then
-       source . $i
-    fi
+    source $i
 done
