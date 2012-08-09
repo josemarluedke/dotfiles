@@ -15,4 +15,3 @@ config/locales/.wti
 npm-debug.log
 db/structure.sql
 .sass-cache
-.rspec
