@@ -7,7 +7,8 @@
    s = status
    ci = commit -m
    p = push
-   l = pull
+   pu = pull
+   l = "log --graph --pretty=\"format:%C(yellow)%h%Cred%d%Creset %s %C(white) %C(cyan)%an%Creset, %C(green)%ar%Creset\""
 [push]
 	default = current
 [pull]
