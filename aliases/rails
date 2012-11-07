@@ -11,3 +11,9 @@ alias bs="bundle exec rspec"
 alias bir="bundle install --relock"
 alias brake="bundle exec rake"
 alias brails="bundle exec rails"
+
+# Zeus
+alias zr="zeus rspec spec/"
+alias zst="zeus start"
+alias zs="zeus server"
+
