@@ -1,0 +1,15 @@
+#!/usr/bin/env osascript
+
+on run argv
+  tell application "iTerm"
+    tell the first terminal
+      tell the current session
+        write text argv as string
+      end tell
+    end tell
+  end
+
+  tell application "MacVim"
+    activate
+  end tell
+end run
