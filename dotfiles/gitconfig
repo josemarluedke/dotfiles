@@ -1,14 +1,24 @@
 [core]
 	excludesfile = ~/.gitignore
+  pager = less -FRSX
+  whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [color]
-	diff = auto
-	ui = true
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
+[color "status"]
+  added = green
+  changed = yellow
+  untracked = red
 [alias]
-   s = status
-   ci = commit -m
-   p = push
-   pu = pull
-   l = "log --graph --pretty=\"format:%C(yellow)%h%Cred%d%Creset %s %C(white) %C(cyan)%an%Creset, %C(green)%ar%Creset\""
+  s = status
+  ci = commit -m
+  p = push
+  pu = pull
+  l = "log --graph --pretty=\"format:%C(yellow)%h%Cred%d%Creset %s %C(white) %C(cyan)%an%Creset, %C(green)%ar%Creset\""
 [push]
 	default = current
 [pull]
