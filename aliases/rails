@@ -11,6 +11,8 @@ alias bs="bundle exec rspec"
 alias bir="bundle install --relock"
 alias brake="bundle exec rake"
 alias brails="bundle exec rails"
+alias migrate="bundle exec rake db:migrate db:test:prepare"
+alias remakedb="bundle exec rake db:drop db:create db:migrate db:seed db:test:prepare"
 
 # Zeus
 alias zr="zeus rspec spec/"
