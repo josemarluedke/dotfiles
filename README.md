@@ -14,4 +14,8 @@ Install default ruby gems, run:
 
     $ rvm gemset import ~/.dotfiles/default.gems
 
-This project rocks and uses MIT-LICENSE.
+# License
+
+Copyright (c) 2012-2013 Josemar Davi Luedke
+
+Licensed under the MIT license
