@@ -49,7 +49,7 @@ BRIGHT_WHITE="\[$ESC[${BRIGHT};${FG_WHITE}m\]"
 
 # works with rvm
 __ruby_version() {
-  which ruby | cut -d/ -f6
+  echo "$(ruby -e 'print RUBY_VERSION')"
 }
 
 __gemset () {
