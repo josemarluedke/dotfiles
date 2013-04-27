@@ -18,6 +18,7 @@
   ci = commit -m
   p = push
   pu = pull
+  undo-commit = reset --soft HEAD^
   l = "log --graph --pretty=\"format:%C(yellow)%h%Cred%d%Creset %s %C(white) %C(cyan)%an%Creset, %C(green)%ar%Creset\""
 [push]
 	default = current
