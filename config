@@ -23,7 +23,12 @@ BRIGHT_BLUE="\[$ESC[${BRIGHT};${FG_BLUE}m\]"
 
 # works with rvm
 __ruby_version() {
-  echo "$(rbenv which ruby | cut -d/ -f6)"
+  RUBY_VERSION="$(rbenv which ruby | cut -d/ -f6)"
+  if [ "$RUBY_VERSION" = '' ]
+    then
+      RUBY_VERSION="system"
+  fi
+  echo "$RUBY_VERSION"
 }
 
 # don't put duplicate lines in the history. See bash(1) for more options
