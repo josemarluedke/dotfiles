@@ -1,6 +1,12 @@
 .DS_Store
+.DS_Store?
+.Spotlight-V100
 *sw?
+._*
+.Trashes
+Icon?
 Thumbs.db
+ehthumbs.db
 NERD_tree_3
 .bundle
 db/*.sqlite3
@@ -8,11 +14,11 @@ log/*.log
 tmp/**/*
 config/database.yml
 db/development_structure.sql
-# Vim
 *.swp
+*.un~
+*.swo
 *.tmproj
 config/locales/.wti
 npm-debug.log
 db/structure.sql
 .sass-cache
-*.un~
