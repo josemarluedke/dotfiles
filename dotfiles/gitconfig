@@ -16,6 +16,7 @@
 [alias]
   s = status
   ci = commit -m
+  ca = commit -am
   p = push
   pu = pull
   undo-commit = reset --soft HEAD^
