@@ -14,6 +14,7 @@
   changed = yellow
   untracked = red
 [alias]
+  c = checkout
   s = status
   ci = commit -m
   ca = commit -am
