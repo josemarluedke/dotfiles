@@ -1,28 +1,39 @@
 [core]
-	excludesfile = ~/.gitignore
-  pager = less -FRSX
-  whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	excludesfile   = ~/.gitignore
+  pager          = less -FRSX
+  whitespace     = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [color]
-  diff = auto
-  status = auto
-  branch = auto
-  interactive = auto
-  ui = true
-  pager = true
+  diff           = auto
+  status         = auto
+  branch         = auto
+  interactive    = auto
+  ui             = true
+  pager          = true
 [color "status"]
-  added = green
-  changed = yellow
-  untracked = red
+  added          = green
+  changed        = yellow
+  untracked      = blue bold
+[color "branch"]
+  current        = yellow reverse
+  local          = yellow bold
+  remote         = green bold
+  plain          = red bold
+[color "diff"]
+	meta           = blue bold
+	frag           = magenta bold
+	old            = red bold
+	new            = green bold
 [alias]
-  c = checkout
-  s = status
-  ci = commit -m
-  ca = commit -am
-  p = push
-  pu = pull
-  undo-commit = reset --soft HEAD^
-  l = "log --graph --pretty=\"format:%C(yellow)%h%Cred%d%Creset %s %C(white) %C(cyan)%an%Creset, %C(green)%ar%Creset\""
+  c              = checkout
+  s              = status
+  ci             = commit -m
+  ca             = commit -am
+  p              = push
+  pu             = pull
+  undo-commit    = reset --soft HEAD^
+  l              = "log --graph --= \"format:%C(yellow)%h%Cred%d%Creset %s %C(white) %C(cyan)%an%Creset, %C(green)%ar%Creset\""
+  bv             = !git branch --color -v | cut -c1-100
 [push]
-	default = current
+	default        = current
 [pull]
-	default = current
+	default        = current
