@@ -9,5 +9,6 @@ alias ga='git add'
 alias gmt='git mergetool'
 alias gx='gitx'
 alias gg='gitg'
+alias new-branch='git checkout -b'
 
 alias upb='git checkout production && git merge origin/master && git push && git checkout master'
