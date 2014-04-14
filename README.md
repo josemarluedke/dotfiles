@@ -1,5 +1,8 @@
 # Dotfiles to setup your bash environment.
 
+![screen shot 2014-04-14 at 6 33 12 pm](https://cloud.githubusercontent.com/assets/230476/2701114/da7825a8-c41c-11e3-897b-cb0ecbf39357.png)
+
+
 ## Usage
 
 Clone repository:
