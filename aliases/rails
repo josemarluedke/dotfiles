@@ -15,8 +15,7 @@ alias migrate="bundle exec rake db:migrate db:test:prepare"
 alias emigrate="bundle exec rake app:railties:install:migrations app:db:migrate app:db:test:load"
 alias remakedb="bundle exec rake db:drop db:create db:migrate db:seed db:test:prepare"
 
-# Zeus
-alias zr="zeus rspec spec/"
-alias zst="zeus start"
-alias zs="zeus server"
-
+alias hrake="heroku run rake"
+alias hrc="heroku run console"
+alias hrun="heroku run bundle exec"
+alias deploy="git push heroku master"
