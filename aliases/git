@@ -1,5 +1,6 @@
 alias gba='git branch -a'
 alias gcm='git checkout master'
+alias gck="git checkout"
 alias glpp='git log --pretty=oneline'
 alias gs='git status'
 alias gd='git diff'
@@ -7,9 +8,13 @@ alias gl='git pull'
 alias gc='git commit -v'
 alias gci='git commit --interactive'
 alias ga='git add'
+alias gaa="git add --all"
 alias gmt='git mergetool'
 alias gx='gitx'
 alias gg='gitg'
 alias new-branch='git checkout -b'
+alias gp="git push origin master"
 
 alias upb='git checkout production && git merge origin/master && git push && git checkout master'
+
+alias uncommit="git reset --soft HEAD^"
