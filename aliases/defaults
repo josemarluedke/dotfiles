@@ -21,6 +21,3 @@ alias rm="rm -i"
 
 # vim
 alias v='mvim'
-
-# NODE
-alias snpm="sudo npm"
