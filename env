@@ -36,7 +36,7 @@ for i in $HOME/.dotfiles/bash-completion.d/*.sh ; do
     fi
 done
 
-# alieases hooks
+# aliases hooks
 for i in $HOME/.dotfiles/aliases/* ; do
     source $i
 done

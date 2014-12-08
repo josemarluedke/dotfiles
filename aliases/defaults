@@ -8,6 +8,11 @@ alias la="ls -a"
 alias ll="ls -lah"
 alias ls="ls -G"
 alias o="open"
+alias desk="cd ~/Desktop/"
+alias ~="cd ~/"
+alias ..="cd ../"
+alias ...="cd ../../"
+alias server="open http://localhost:8000 && python -m SimpleHTTPServer"
 
 # secure your moviments and commands
 alias mv="mv -i"
@@ -16,4 +21,3 @@ alias rm="rm -i"
 
 # vim
 alias v='mvim'
-
