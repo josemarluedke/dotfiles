@@ -13,7 +13,7 @@ alias gmt='git mergetool'
 alias gx='gitx'
 alias gg='gitg'
 alias new-branch='git checkout -b'
-alias gp="git push origin master"
+alias gp="git push"
 
 alias upb='git checkout production && git merge origin/master && git push && git checkout master'
 
