@@ -23,7 +23,7 @@ BRIGHT_BLUE="\[$ESC[${BRIGHT};${FG_BLUE}m\]"
 
 # works with rvm
 __ruby_version() {
-  RUBY_VERSION="$(rbenv which ruby | cut -d/ -f6)"
+  RUBY_VERSION="$(rbenv version-name)"
   if [ "$RUBY_VERSION" = '' ]
     then
       RUBY_VERSION="system"
