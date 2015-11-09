@@ -21,3 +21,8 @@ alias rm="rm -i"
 
 # vim
 alias v='mvim'
+
+# Docker
+alias d="docker"
+alias dc="docker-compose"
+alias dm="docker-machine"
