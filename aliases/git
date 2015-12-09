@@ -1,5 +1,6 @@
 alias gba='git branch -a'
 alias gcm='git checkout master'
+alias gcd='git checkout develop'
 alias gck="git checkout"
 alias glpp='git log --pretty=oneline'
 alias gs='git status'
