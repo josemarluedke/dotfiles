@@ -22,6 +22,9 @@ alias rm="rm -i"
 # vim
 alias v='mvim'
 
+# NeoVim
+alias n='nvim'
+
 # Docker
 alias d="docker"
 alias dc="docker-compose"
