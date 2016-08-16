@@ -33,6 +33,7 @@
   undo-commit    = reset --soft HEAD^
   l              = "log --graph --pretty=\"format:%C(yellow)%h%Cred%d%Creset %s %C(white) %C(cyan)%an%Creset, %C(green)%ar%Creset\""
   bv             = !git branch --color -v | cut -c1-100
+  up             = pull --rebase --autostash
 [push]
 	default        = current
 [pull]
