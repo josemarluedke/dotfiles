@@ -38,3 +38,6 @@
 	default        = current
 [pull]
 	default        = current
+[user]
+	name = Josemar Luedke
+	email = josemarluedke@gmail.com

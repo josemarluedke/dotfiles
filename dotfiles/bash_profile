@@ -8,3 +8,12 @@ google() {
 md() {
  mkdir $1; cd $1
 }
+
+eval "$(rbenv init -)"
+export PATH="/Users/josemarluedke/Projects/Neighborly/demeter:$PATH:bin"
+if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
+
+# Setting PATH for Python 3.5
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+export PATH
