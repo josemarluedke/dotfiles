@@ -1,5 +1,5 @@
 [core]
-	excludesfile   = ~/.gitignore
+  excludesfile   = ~/.gitignore
   pager          = less -FRSX
   whitespace     = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [color]
@@ -19,10 +19,10 @@
   remote         = green bold
   plain          = red bold
 [color "diff"]
-	meta           = blue bold
-	frag           = magenta bold
-	old            = red bold
-	new            = green bold
+  meta           = blue bold
+  frag           = magenta bold
+  old            = red bold
+  new            = green bold
 [alias]
   c              = checkout
   s              = status
@@ -35,6 +35,9 @@
   bv             = !git branch --color -v | cut -c1-100
   up             = pull --rebase --autostash
 [push]
-	default        = current
+  default        = current
 [pull]
-	default        = current
+  default        = current
+[user]
+  name = Josemar Luedke
+  email = josemarluedke@gmail.com
