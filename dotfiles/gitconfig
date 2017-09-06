@@ -34,6 +34,7 @@
   l              = "log --graph --pretty=\"format:%C(yellow)%h%Cred%d%Creset %s %C(white) %C(cyan)%an%Creset, %C(green)%ar%Creset\""
   bv             = !git branch --color -v | cut -c1-100
   up             = pull --rebase --autostash
+  amend          = commit --amend --no-edit
 [push]
   default        = current
 [pull]
