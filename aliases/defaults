@@ -29,7 +29,6 @@ alias n='nvim'
 alias d="docker"
 alias dc="docker-compose"
 alias dm="docker-machine"
-alias de="demeter"
 
 # Kubernetes
 alias k=kubectl
