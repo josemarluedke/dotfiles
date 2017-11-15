@@ -19,11 +19,11 @@ alias mv="mv -i"
 alias cp="cp -i"
 alias rm="rm -i"
 
-# vim
-alias v='mvim'
-
 # NeoVim
-alias n='nvim'
+alias n="nvim"
+
+# Oni vim
+alias v="/Applications/Oni.app/Contents/Resources/app/oni.sh"
 
 # Docker
 alias d="docker"
