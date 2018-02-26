@@ -45,6 +45,19 @@ if [ ! -n "$ZSH" ]; then
 fi
 
 # Install powerline fonts
+echo "Do you want to install Powerline fonts? [Y/N]"
+read choice
+if [[ $choice = 'Y' ]] || [[ $choice = 'y' ]]; then
+  TMP_POWERLINE_FONTS=tmp-install-fonts
+  env git clone --depth=1 https://github.com/powerline/fonts.git $TMP_POWERLINE_FONTS
+  cd $TMP_POWERLINE_FONTS
+  sh ./install.sh
+  cd ..
+  rm -rf $TMP_POWERLINE_FONTS
+  echo "Powerline fonts installed."
+else
+  echo "Powerline fonts skipped."
+fi
 
 # Symlink files
 echo "Symlinking dotfiles."
