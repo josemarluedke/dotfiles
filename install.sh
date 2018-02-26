@@ -2,7 +2,6 @@
 
 DOTFILES=~/.dotfiles
 
-# Install Brew
 # Clone dotfiles repo
 if [ ! -d "$DOTFILES" ]; then
   env git clone https://github.com/josemarluedke/dotfiles.git $DOTFILES || {
@@ -11,23 +10,24 @@ if [ ! -d "$DOTFILES" ]; then
   }
 fi
 
+# Install Brew
 echo "Checking if homebrew is installed."
-type brew
+type brew > /dev/null
 rc=$?; if [[ $rc != 0 ]]; then
-    echo "Installing homebrew."
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-else
-    echo "Homebrew is already installed."
-fi
+  echo "Installing homebrew."
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-echo "Verifying homebrew installation."
-type brew
-rc=$?; if [[ $rc != 0 ]]; then
+  echo "Verifying homebrew installation."
+  type brew
+  rc=$?; if [[ $rc != 0 ]]; then
     echo "Cannot find homebrew installation. Check the error log."
     exit $rc
-else
+  else
     echo "Homebrew installation is verified."
   fi
+else
+  echo "Homebrew is already installed."
+fi
 
 # Install oh my zsh
 if [ ! -n "$ZSH" ]; then
