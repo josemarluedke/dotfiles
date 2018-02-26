@@ -29,6 +29,16 @@ else
   echo "Homebrew is already installed."
 fi
 
+# Brew bundle
+echo "Do you want to run brew bundle from dotfiles? [Y/N]"
+read choice
+if [[ $choice = 'Y' ]] || [[ $choice = 'y' ]]; then
+  brew tap Homebrew/bundle
+  brew bundle --file=$DOTFILES/Brewfile
+else
+  echo "Brew bundle skipped."
+fi
+
 # Install oh my zsh
 if [ ! -n "$ZSH" ]; then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
