@@ -1,8 +1,15 @@
 #!/bin/sh
 
-# Clone .dotfiles
+DOTFILES=~/.dotfiles
 
 # Install Brew
+# Clone dotfiles repo
+if [ ! -d "$DOTFILES" ]; then
+  env git clone https://github.com/josemarluedke/dotfiles.git $DOTFILES || {
+    echo "Error: git clone of dotfiles repo failed"
+    exit 1
+  }
+fi
 
 echo "Checking if homebrew is installed."
 type brew
@@ -29,6 +36,7 @@ fi
 
 # Install powerline fonts
 
+# Symlink files
 echo "Symlinking dotfiles."
 for i in `find ~/.dotfiles/dotfiles -maxdepth 1`; do
   original_file=`basename $i`
