@@ -44,6 +44,11 @@ if [ ! -n "$ZSH" ]; then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
+# Install Spaceship zsh theme
+ZSH_CUSTOM=~/.oh-my-zsh/custom
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme" > /dev/null
+
 # Install powerline fonts
 echo "Do you want to install Powerline fonts? [Y/N]"
 read choice
