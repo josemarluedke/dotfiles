@@ -68,3 +68,6 @@ for i in `find ~/.dotfiles/dotfiles -maxdepth 1`; do
     ln -snfv $i ~/.${original_file} > /dev/null
   fi
 done
+
+mkdir -p ~/.oni
+ln -s ~/.dotfiles/config/oni.js ~/.oni/config.js
