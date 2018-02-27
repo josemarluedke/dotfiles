@@ -41,7 +41,15 @@ fi
 
 # Install oh my zsh
 if [ ! -n "$ZSH" ]; then
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  hijack_env() {
+    if [[ "$1" != "zsh" ]]; then
+      env "$@"
+    fi
+  }
+
+  alias env="hijack_env"
+  curl https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -so - | sh
+  unalias env
 fi
 
 # Install Spaceship zsh theme
