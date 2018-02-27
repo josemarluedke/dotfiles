@@ -82,5 +82,7 @@ for i in `find ~/.dotfiles/dotfiles -maxdepth 1`; do
   fi
 done
 
+ln -snfv ~/.dotfiles/custom.zsh $ZSH_CUSTOM/custom.zsh > /dev/null
+
 mkdir -p ~/.oni
 ln -s ~/.dotfiles/config/oni.js ~/.oni/config.js
