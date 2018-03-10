@@ -7,11 +7,11 @@ const activate = oni => {
 
 module.exports = {
   activate,
-  'ui.colorscheme': 'base16-nord',
-
   'experimental.markdownPreview.enabled': false,
-  'experimental.editor.textMateHighlighting.enabled': true,
+  'experimental.editor.textMateHighlighting.enabled': false,
 
+  'ui.colorscheme': 'base16-nord',
+  'autoClosingPairs.enabled': false,
   'oni.useDefaultConfig': false,
   'editor.fontSize': '15px',
   'editor.fontFamily': 'Menlo',
