@@ -19,6 +19,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/josemarluedke/dotfiles/mas
 - [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle) - This will
     bundle dependencies specified at [Brewfile](./Brewfile). (Optional)
 
+## Settings
+
+- Change your terminal font to use one of the Powerline fonts. The one used in the screenshot above is: `14pt Meslo LG S DZ Regular for Powerline`
+
 ## Useful tips
 
 ### Enable Key Repeating in Mac OS X
