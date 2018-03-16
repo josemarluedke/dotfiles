@@ -10,6 +10,9 @@ if [ ! -d "$DOTFILES" ]; then
   }
 fi
 
+# Add global gitconfig
+git config --global include.path $DOTFILES/config/global.gitconfig
+
 # Install Brew
 echo "Checking if homebrew is installed."
 type brew > /dev/null
