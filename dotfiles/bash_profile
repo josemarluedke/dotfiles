@@ -1,10 +1,7 @@
-source ~/.dotfiles/env
-source ~/.dotfiles/config
+eval "$(nodenv init -)"
+source ~/.profile
 
-google() {
- open /Applications/Google\ Chrome.app/ "http://www.google.com/search?q= $1"
-}
+export GOPATH=$HOME/code/go
+export PATH=$PATH:$GOPATH/bin
 
-md() {
- mkdir $1; cd $1
-}
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
