@@ -19,6 +19,14 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/josemarluedke/dotfiles/mas
 - [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle) - This will
     bundle dependencies specified at [Brewfile](./Brewfile). (Optional)
 
+## Useful tips
+
+### Enable Key Repeating in Mac OS X
+
+This is done by disableing Press and Hold feature.
+
+`defaults write -g ApplePressAndHoldEnabled -bool false`
+
 ## License
 
 Copyright (c) 2012-2018 Josemar Luedke
