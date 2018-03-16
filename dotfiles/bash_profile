@@ -1,5 +1,4 @@
 eval "$(nodenv init -)"
-source ~/.profile
 
 export GOPATH=$HOME/code/go
 export PATH=$PATH:$GOPATH/bin
