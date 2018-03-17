@@ -1,6 +1,6 @@
 # Dotfiles to setup your development environment.
 
-![Josemar's dotfiles](https://user-images.githubusercontent.com/230476/37540486-59a759a6-2914-11e8-823e-bd367afffb53.png)
+![Josemar's dotfiles](https://user-images.githubusercontent.com/230476/37551141-63bb47ca-2957-11e8-86c3-7e8c2b2a66cb.png)
 
 
 ## Installing
