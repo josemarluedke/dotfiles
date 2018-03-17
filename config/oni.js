@@ -13,7 +13,7 @@ module.exports = {
   'ui.colorscheme': 'base16-nord',
   'autoClosingPairs.enabled': false,
   'oni.useDefaultConfig': false,
-  'editor.fontSize': '15px',
+  'editor.fontSize': '14px',
   'editor.fontFamily': 'Menlo',
   'editor.linePadding': 4,
   'tabs.mode': 'tabs',
