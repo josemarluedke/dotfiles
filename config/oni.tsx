@@ -1,14 +1,20 @@
 // For more information on customizing Oni, check out our wiki page:
 // https://github.com/extr0py/oni/wiki/Configuration
 
-const activate = oni => {
-  oni.input.unbind('<tab>');
-};
+import * as React from "/Applications/Oni.app/Contents/Resources/app/node_modules/react"
+import * as Oni from "/Applications/Oni.app/Contents/Resources/app/node_modules/oni-api"
 
-module.exports = {
-  activate,
+export const activate = (oni: Oni.Plugin.Api) => {
+  oni.input.unbind('<tab>');
+}
+
+export const deactivate = (oni: Oni.Plugin.Api) => {
+  console.log("config deactivated")
+}
+
+export const configuration = {
   'experimental.markdownPreview.enabled': false,
-  'experimental.editor.textMateHighlighting.enabled': false,
+  'experimental.edittextMateHighlighting.enabled': false,
 
   'ui.colorscheme': 'base16-nord',
   'autoClosingPairs.enabled': false,
@@ -23,5 +29,11 @@ module.exports = {
     '**/dist/**',
     '**/tmp/**',
     '**/vendor/**'
+  ],
+
+  "environment.additionalPaths": [
+    "/usr/bin",
+    "/usr/local/bin",
+    "/Users/josemarluedke/code/go/bin"
   ]
-};
+}

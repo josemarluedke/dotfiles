@@ -88,5 +88,5 @@ done
 ln -snfv ~/.dotfiles/custom.zsh $ZSH_CUSTOM/custom.zsh > /dev/null
 
 mkdir -p ~/.oni
-ln -s ~/.dotfiles/config/oni.js ~/.oni/config.js
+ln -s ~/.dotfiles/config/oni.tsx ~/.config/oni/config.tsx
 env zsh
