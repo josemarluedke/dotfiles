@@ -40,6 +40,12 @@ export const configuration = {
     '**/vendor/**'
   ],
 
+  'language.go.languageServer.rootFiles': ['.git'], // In a git repository
+  'language.go.languageServer.command': 'go-langserver',
+  'language.go.languageServer.arguments': [
+    '--gocodecompletion'
+  ],
+
   'environment.additionalPaths': [
     '/usr/bin',
     '/usr/local/bin',
