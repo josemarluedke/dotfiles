@@ -19,6 +19,8 @@ export const deactivate = (oni: Oni.Plugin.Api) => {
 export const configuration = {
   'experimental.indentLines.enabled': true,
   'experimental.markdownPreview.enabled': false,
+  'editor.fontLigatures': true,
+
   'editor.textMateHighlighting.enabled': true,
   'editor.renderer': 'webgl',
   'explorer.autoRefresh': false,
