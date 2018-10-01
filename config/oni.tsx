@@ -27,8 +27,9 @@ export const configuration = {
   'editor.renderer': 'webgl',
   'explorer.autoRefresh': false,
 
-  'ui.colorscheme': 'gruvbox_dark',
   'sidebar.default.open': false,
+  'ui.colorscheme': 'dracula',
+  // 'ui.colorscheme': 'gruvbox_dark',
   'autoClosingPairs.enabled': false,
   'oni.useDefaultConfig': false,
   'editor.fontSize': '15px',
@@ -56,4 +57,4 @@ export const configuration = {
     '/usr/local/bin',
     '/Users/josemarluedke/code/go/bin'
   ]
-};
+}
