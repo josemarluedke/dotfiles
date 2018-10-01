@@ -17,7 +17,7 @@ export const deactivate = (oni: Oni.Plugin.Api) => {
 }
 
 export const configuration = {
-  'experimental.indentLines.enabled': true,
+  'experimental.indentLines.enabled': false,
   'experimental.markdownPreview.enabled': false,
   'experimental.vcs.sidebar': true,
   'experimental.vcs.blame.enabled': true,
