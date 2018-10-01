@@ -10,11 +10,11 @@ export const activate = (oni: Oni.Plugin.Api) => {
   oni.input.unbind('<tab>');
   // oni.input.bind(',m', 'explorer.toggle');
   // oni.input.bind('t', 'quickOpen.show', isNormalMode);
-};
+}
 
 export const deactivate = (oni: Oni.Plugin.Api) => {
   console.log('config deactivated');
-};
+}
 
 export const configuration = {
   'experimental.indentLines.enabled': true,
@@ -24,12 +24,13 @@ export const configuration = {
   'explorer.autoRefresh': false,
 
   'ui.colorscheme': 'gruvbox_dark',
+  'sidebar.default.open': false,
   'autoClosingPairs.enabled': false,
   'oni.useDefaultConfig': false,
-  'editor.fontSize': '14px',
-  'editor.fontFamily': 'Menlo',
+  'editor.fontSize': '15px',
+  'editor.fontFamily': 'Fira Code',
   'editor.linePadding': 4,
-  "editor.quickOpen.defaultOpenMode": 4,
+  'editor.quickOpen.defaultOpenMode': 4,
   'tabs.mode': 'tabs',
   'tabs.showIndex': true,
   'oni.exclude': [
