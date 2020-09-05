@@ -24,3 +24,17 @@ alias dm="docker-machine"
 
 # Kubernetes
 alias k=kubectl
+
+# Others
+alias flush="sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
+
+# Function to get aws secret
+function awssecret {
+  if [[ "$1" == "" ]]
+  then
+    echo "awssecret <secret-name> <key>"
+    return
+  fi
+
+  aws secretsmanager get-secret-value --secret-id $1 | jq '.SecretString | fromjson' | jq -r .$2
+}
