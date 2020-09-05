@@ -33,6 +33,6 @@ This is done by disableing Press and Hold feature.
 
 ## License
 
-Copyright (c) 2012-2018 Josemar Luedke
+Copyright (c) 2012-2020 Josemar Luedke
 
 Licensed under the MIT license
