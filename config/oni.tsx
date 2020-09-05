@@ -19,16 +19,19 @@ export const deactivate = (oni: Oni.Plugin.Api) => {
 export const configuration = {
   'experimental.indentLines.enabled': false,
   'experimental.markdownPreview.enabled': false,
-  'experimental.vcs.sidebar': true,
-  'experimental.vcs.blame.enabled': true,
-  'editor.fontLigatures': true,
+  'experimental.preview.enabled': false,
+  'experimental.particles.enabled': false,
+  'experimental.colorHighlight.enabled': false,
+  'experimental.vcs.sidebar': false,
+  'experimental.vcs.blame.enabled': false,
+  'editor.fontLigatures': false,
 
-  'editor.textMateHighlighting.enabled': true,
-  'editor.renderer': 'webgl',
+  'editor.textMateHighlighting.enabled': false,
+  // 'editor.renderer': 'webgl',
   'explorer.autoRefresh': false,
 
   'sidebar.default.open': false,
-  'ui.colorscheme': 'dracula',
+  'ui.colorscheme': 'OceanicNext',
   // 'ui.colorscheme': 'gruvbox_dark',
   'autoClosingPairs.enabled': false,
   'oni.useDefaultConfig': false,
@@ -49,8 +52,13 @@ export const configuration = {
   'language.go.languageServer.rootFiles': ['.git'], // In a git repository
   'language.go.languageServer.command': 'go-langserver',
   'language.go.languageServer.arguments': [
-    '--gocodecompletion'
+    '-gocodecompletion'
   ],
+
+  // 'language.elixir.languageServer.command': '/Users/josemarluedke/code/elixir/elixir-ls/language_server.sh',
+  // 'language.elixir.languageServer.arguments': ['--stdio'],
+  // 'language.elixir.languageServer.rootFiles': ['mix.exs'],
+  // 'language.elixir.languageServer.configuration': {}
 
   'environment.additionalPaths': [
     '/usr/bin',
