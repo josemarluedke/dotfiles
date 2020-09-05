@@ -16,6 +16,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/josemarluedke/dotfiles/mas
 - [Spaceship ZSH](https://github.com/denysdovhan/spaceship-prompt)
 - [Powerline fonts](https://github.com/powerline/fonts) (Optional)
 - [Homebrew](https://brew.sh/)
+- [Volta](https://volta.sh/)
 - [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle) - This will
     bundle dependencies specified at [Brewfile](./Brewfile). (Optional)
 

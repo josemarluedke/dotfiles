@@ -32,6 +32,35 @@ else
   echo "Homebrew is already installed."
 fi
 
+# Install Volta
+echo "Checking if volta is installed."
+type volta > /dev/null
+rc=$?; if [[ $rc != 0 ]]; then
+  echo "Installing Volta."
+  /usr/local/bin/brew install volta
+
+  echo "Verifying volta installation."
+  type volta
+  rc=$?; if [[ $rc != 0 ]]; then
+    echo "Cannot find volta installation."
+    exit $rc
+  else
+    echo "Volta installation is verified."
+  fi
+else
+  echo "Volta is already installed."
+fi
+
+# Install Node & Yarn using Volta
+type volta > /dev/null
+rc=$?; if [[ $rc == 0 ]]; then
+  echo "Installing Node using Volta."
+  /usr/local/bin/volta install node@latest
+
+  echo "Installing Yarn using Volta."
+  /usr/local/bin/volta install yarn
+fi
+
 # Brew bundle
 echo "Do you want to run brew bundle from dotfiles? [Y/N]"
 read choice
