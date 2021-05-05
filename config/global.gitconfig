@@ -43,3 +43,5 @@
   default        = current
 [merge]
   tool = vimdiff
+[init]
+  defaultBranch = main
