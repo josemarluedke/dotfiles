@@ -106,7 +106,7 @@ fi
 
 # Symlink files
 echo "Symlinking dotfiles."
-for i in `find ~/.dotfiles/dotfiles -maxdepth 1`; do
+for i in `find ~/.dotfiles/dotfiles/* -maxdepth 1`; do
   original_file=`basename $i`
 
   if [[ "$original_file" != "dotfiles" ]]; then
