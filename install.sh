@@ -18,7 +18,7 @@ echo "Checking if homebrew is installed."
 type brew > /dev/null
 rc=$?; if [[ $rc != 0 ]]; then
   echo "Installing homebrew."
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
   echo "Verifying homebrew installation."
   type brew
