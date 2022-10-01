@@ -17,7 +17,6 @@ SPACESHIP_PROMPT_ORDER=(
   dir           # Current directory section
   git           # Git section (git_branch + git_status)
   node          # Node.js section
-  ember         # Ember.js section
   line_sep      # Line break
   jobs          # Background jobs indicator
   exit_code     # Exit code section
@@ -32,6 +31,6 @@ SPACESHIP_DIR_TRUNC_REPO=false
 SPACESHIP_GIT_STATUS_COLOR=green
 SPACESHIP_GIT_STATUS_SHOW=false
 
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.dotfiles/aliases.zsh
 source ~/.bash_profile
