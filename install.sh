@@ -92,6 +92,8 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 # Install zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 
+$(brew --prefix)/opt/fzf/install
+
 # Install powerline fonts
 echo "Do you want to install Powerline fonts? [Y/N]"
 read choice
