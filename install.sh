@@ -37,7 +37,7 @@ echo "Checking if volta is installed."
 type volta > /dev/null
 rc=$?; if [[ $rc != 0 ]]; then
   echo "Installing Volta."
-  /usr/local/bin/brew install volta
+  /opt/homebrew/bin/brew install volta
 
   echo "Verifying volta installation."
   type volta
