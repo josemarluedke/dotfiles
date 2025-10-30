@@ -1,7 +1,8 @@
 [core]
   excludesfile   = ~/.gitignore
-  pager          = less -FRSX
   whitespace     = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+  ; git delta as pager for better diffs
+  pager = delta ; less -FRSX
 [diff]
   noprefix       = true
 [color]
@@ -45,3 +46,24 @@
   tool = vimdiff
 [init]
   defaultBranch = main
+
+; Git Delta setup
+[include]
+  path = ./themes.gitconfig
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  navigate = true  # use n and N to move between diff sections
+  dark = true      # or light = true, or omit for auto-detection
+  side-by-side = true
+  line-numbers = true
+  decorations = true
+  syntax-theme = Dracula
+
+  ; This is the theme
+  features = chameleon zebra-dark
+
+[merge]
+  conflictStyle = zdiff3

@@ -1,7 +1,6 @@
-# Dotfiles to setup your development environment.
+# Dotfiles to setup your development environment
 
 ![Josemar's dotfiles](https://user-images.githubusercontent.com/230476/37551141-63bb47ca-2957-11e8-86c3-7e8c2b2a66cb.png)
-
 
 ## Installing
 
@@ -31,6 +30,14 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/josemarluedke/dotfiles/mas
 This is done by disableing Press and Hold feature.
 
 `defaults write -g ApplePressAndHoldEnabled -bool false`
+
+## Recommended Software
+
+### [Atuin CLI](https://atuin.sh/)
+
+The magical shell history tool loved by developers worldwide. Sync your commands across machines, search everything instantly, and keep your data encrypted. Open source.
+
+`curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh`
 
 ## License
 
