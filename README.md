@@ -17,7 +17,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/josemarluedke/dotfiles/mas
 - [Homebrew](https://brew.sh/)
 - [Volta](https://volta.sh/)
 - [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle) - This will
-    bundle dependencies specified at [Brewfile](./Brewfile). (Optional)
+- [Git Delta](https://github.com/dandavison/delta)
+- [Zellij](https://zellij.dev/)
+
+bundle dependencies specified at [Brewfile](./Brewfile). (Optional)
 
 ## Settings
 
